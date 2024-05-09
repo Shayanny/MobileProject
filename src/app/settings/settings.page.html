@@ -1,13 +1,17 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
+    
     <ion-title>Settings</ion-title>
     <ion-buttons slot = "start">
+
+      <!-- this adds a back feature  -->
       <ion-back-button defaultHref="/"></ion-back-button>
+     
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="custom-bg">
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">settings</ion-title>
@@ -15,7 +19,13 @@
   </ion-header>
 
   <div style = "text-align: center;">
+    <br><br>
+
+    
   <p> Enter Name: <input [(ngModel)]="name"> </p>
   <ion-button (click)="saveName()"> Save Name</ion-button>
   </div>
+
+ 
+  
 </ion-content>

@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Router, RouterLinkWithHref } from '@angular/router';
 import { Storage } from '@ionic/storage-angular';
-import { IonBackButton, IonButton, IonButtons, IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/standalone';
+import { IonBackButton, IonButton, IonButtons, IonContent, IonHeader, IonIcon, IonTitle, IonToolbar } from '@ionic/angular/standalone';
 import { HomePage } from '../home/home.page';
 import { RouterOutlet } from '@angular/router';
 
@@ -13,7 +13,7 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './settings.page.html',
   styleUrls: ['./settings.page.scss'],
   standalone: true,
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, RouterOutlet, IonButton, RouterLinkWithHref, RouterOutlet, IonButtons, IonBackButton]
+  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, RouterOutlet, IonButton, RouterLinkWithHref, RouterOutlet, IonButtons, IonBackButton, IonIcon]
 })
 export class SettingsPage implements OnInit {
 

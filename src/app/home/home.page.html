@@ -1,13 +1,14 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
+      <!-- Databinding Title-->
       {{title}}
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="custom-bg">
   <ion-header collapse="condense">
   </ion-header>
 
@@ -15,7 +16,11 @@
   
   <div style = "text-align: center;">
     <br><br><br>
-    <ion-button (click)="openPageTwo()"> Page Two </ion-button>
+
+    <!-- Button calling functions in .ts to open other pages
+    -->
+
+    <ion-button (click)="openPageTwo()"> The News </ion-button>
     <br><br>
     <ion-button (click)="openSettings()"> Settings </ion-button>
 
